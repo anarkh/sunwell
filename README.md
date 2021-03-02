@@ -116,7 +116,7 @@ error: (event) => {
 例如：
 
 ```javascript
-redirectSource: url,
+redirectSource: url;
 ```
 
 tarckId：登录态的 vuserid，sunwell 会根据这个字段判断当前用户是否在白名单中
