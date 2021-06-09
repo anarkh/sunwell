@@ -4,14 +4,14 @@
 const report = require("../lib/report");
 const silence = require("../lib/silence");
 const redirect = require("../lib/redirect");
+const { UA } = require("../lib/utils");
 const {
-  UA,
   modifyRequest,
   putCache,
   getCache,
   fetchUrl,
   fetchAndCachePut,
-} = require("../lib/utils");
+} = require("../lib/fetchAndCache");
 module.exports = ({ urlsToCache, BLACKLIST, redirectSource }) => {
   let funString = "";
   const preFun = {
